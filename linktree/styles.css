@@ -1,0 +1,152 @@
+/* styles.css */
+
+/* Reset de márgenes y estilos predeterminados */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    margin-top: 50px;
+}
+
+/* Foto de perfil */
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Título y subtítulo */
+.title {
+    font-size: 28px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin: 0;
+    color: #ddd;
+    font-style: italic;
+}
+
+/* Enlaces */
+.links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4);
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.link-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 117, 140, 0.6);
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+.links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.link-button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
+
+.link-button i {
+    font-size: 20px;
+}
+
+.link-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.6);
+}
+
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 1px dashed #fff;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff758c;
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .link-button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+}
